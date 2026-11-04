@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Commands package="guidPackage">
+    <Groups><Group guid="guidCommandSet" id="MultiCaretGroup" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_EDIT"/></Group></Groups>
+    <Buttons>
+      <Button guid="guidCommandSet" id="AddBelow" priority="0x0100" type="Button"><Parent guid="guidCommandSet" id="MultiCaretGroup"/><Strings><ButtonText>MultiCursor: Add Caret Below</ButtonText><CommandName>MultiCursor.AddBelow</CommandName></Strings></Button>
+      <Button guid="guidCommandSet" id="AddAbove" priority="0x0200" type="Button"><Parent guid="guidCommandSet" id="MultiCaretGroup"/><Strings><ButtonText>MultiCursor: Add Caret Above</ButtonText><CommandName>MultiCursor.AddAbove</CommandName></Strings></Button>
+    </Buttons>
+  </Commands>
+  <Symbols>
+    <GuidSymbol name="guidPackage" value="{59028fbd-0f65-4d00-8dbc-9c3f2c28920a}"/>
+    <GuidSymbol name="guidCommandSet" value="{bc3d4ab4-a4c6-4f4a-b7d4-8b1236ed7080}">
+      <IDSymbol name="MultiCaretGroup" value="0x1000"/>
+      <IDSymbol name="AddBelow" value="0x0100"/>
+      <IDSymbol name="AddAbove" value="0x0101"/>
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
