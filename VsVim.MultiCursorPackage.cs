@@ -16,6 +16,7 @@ namespace VsVim.MultiCursor
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration("VsVim MultiCursor", "Native caret above/below", "1.0")]
     [ProvideMenuResource("Menus.ctmenu", 1)]
+    [ProvideAutoLoad(UIContextGuids80.SolutionExists, PackageAutoLoadFlags.BackgroundLoad)]
     [Guid(PackageGuidString)]
     public sealed class MultiCursorPackage : AsyncPackage
     {
