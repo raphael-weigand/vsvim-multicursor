@@ -48,7 +48,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VsVim.MultiCursorPackage.cs" />
     <Compile Include="CaretOperations.cs" />
-    <VSCTCompile Include="Commands.vsct" />
+    <VSCTCompile Include="Commands.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+      <SubType>Designer</SubType>
+    </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
